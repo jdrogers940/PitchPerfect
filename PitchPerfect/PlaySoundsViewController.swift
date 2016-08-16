@@ -41,7 +41,7 @@ class PlaySoundsViewController: UIViewController {
         case .Echo:
             playSound(echo: true)
         case .Reverb:
-            playSound(reverb: true);
+            playSound(reverb: true)
         }
         
         configureUI(.Playing)
@@ -57,13 +57,9 @@ class PlaySoundsViewController: UIViewController {
         setupAudio()
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         configureUI(.NotPlaying)
     }
     
